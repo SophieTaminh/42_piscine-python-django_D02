@@ -1,0 +1,6 @@
+name = "duoquadragintian"
+title = "CV Sophie Taminh"
+first_name = "Taminh"
+last_name = "Sophie"
+age = "48"
+trade = "developpeur web"

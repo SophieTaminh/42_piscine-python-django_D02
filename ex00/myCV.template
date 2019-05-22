@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{title}</title>
+			
+
+	</head>
+
+	<body>
+		<h1> {trade} </h1>
+        
+        <div>	
+			<h2> {last_name} {first_name} </h2>
+			<p> age {age}</p>
+		</div>
+
+		<div>
+			<h2> Compétences </h2>
+
+				<ul style="background-color: pink" >Techniques
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>PHP</li>
+				</ul>
+				<ol id="br">Fonctionnelles
+					<li >presentation offre de service</li>
+					<li>gestion de planning en ligne</li>
+					<li>Paiement en ligne</li>
+				</ol>
+		</div>
+
+		<div>
+			<h2> Parcours </h2>
+
+			<table >
+				<tr>
+					<th>Annee</th>
+					<th>Employeur</th>
+				</tr>
+				<tr>
+					<td>2017 - 2019</td>
+					<td>Valactive</td>
+				</tr>
+				<tr>
+					<td>2016 - 2017</td>
+					<td>La Banque Postale</td>
+				</tr>
+				<tr>
+					<td>2015 - 2016</td>
+					<td style="border: 5px solid #424242;">L'UBAF - Union des Banques Arabes et Francaises</td>
+				</tr>
+			</table>
+			
+		</div>	
+			
+	</body>
+</html>
