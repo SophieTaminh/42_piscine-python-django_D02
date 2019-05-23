@@ -19,7 +19,6 @@ class Text(str):
         data = data.replace('\n', '\n<br />\n') 
         return data
 
-
 class Elem:
     """
     Elem will permit us to represent our HTML elements.
@@ -36,6 +35,7 @@ class Elem:
 
         Obviously.
         """
+        
         self.tag = tag
         self.attr = attr
         self.tag_type =  tag_type
@@ -54,6 +54,7 @@ class Elem:
         Make sure it renders everything (tag, attributes, embedded
         elements...).
         """
+ 
         if self.tag_type == 'double':
             result = "<" + self.tag + self.__make_attr() + ">" + self.__make_content() + "</" + self.tag + ">"
         elif self.tag_type == 'simple':
@@ -101,21 +102,9 @@ class Elem:
                                                 for elem in content])))
 if __name__ == '__main__':
     #intantation tag html
+
     ins_html = Elem(tag="html", content=[(Elem(tag = "head", content=
                 Elem(tag = "title", content = Text('"Hello ground!"') ))),(Elem(tag="body", content=
                 [Elem(tag = "h1", content = Text('"Oh no, not again!"')),
                 Elem(tag="img", attr={'src' : '"http://i.imgur.com/pfp3T.jpg"'}, tag_type='simple') ]))])
     print(ins_html)
-
-    #ins_head = Elem(tag = "head", content= Elem(tag = "title", content = Text('"Hello ground!"') )) 
-    #print(ins_head)
-    
-    #ins_body = Elem(tag="body", content=[Elem(tag = "h1", content = Text('"Oh no, not again!"')),Elem(tag="img", attr={'src' : '"http://i.imgur.com/pfp3T.jpg"'}, tag_type='simple') ])
-    #print(ins_body)
-    
-
-    #ins_title = Elem(tag = "title", content = Text('"Hello ground!"'))
-    #ins_h1 =Elem(tag = "h1", content = Text('"Oh no, not again!"'))
-    #ins_img = Elem(tag="img", attr={'src' : '"http://i.imgur.com/pfp3T.jpg"'}, tag_type='simple') 
-    #print(ins_title)
-
